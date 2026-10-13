@@ -28,6 +28,16 @@
       <li><strong>趣味：</strong>音楽、ゲーム、カラオケ</li>
     </ul>
 
+<h3>My Favorites</h3>
+<p>ボタンを押すと、好きなものについて紹介します！</p>
+
+<button id="favoriteButton">好きなものをもっと知る！</button>
+
+<p id="favoriteText" hidden>
+  趣味はゲーム、音楽、カラオケです！
+  特にゲームが好きで、好きな作品を楽しんでいます。
+</p>
+    
     <h3>Skills</h3>
     <table>
       <tr>
@@ -79,6 +89,20 @@
 
     <h3>Open Processing</h3>
     <iframe src="https://openprocessing.org/sketch/3033404/embed/" width="400" height="400"></iframe>
-  
+
+    <script>
+  const button = document.getElementById("favoriteButton");
+  const text = document.getElementById("favoriteText");
+
+  button.addEventListener("click", function() {
+    if (text.hidden) {
+      text.hidden = false;
+      button.textContent = "閉じる";
+    } else {
+      text.hidden = true;
+      button.textContent = "好きなものをもっと知る！";
+    }
+  });
+</script>
   </body>
 </html>
