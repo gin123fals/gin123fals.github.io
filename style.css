@@ -77,15 +77,24 @@ th, td {
 }
 
 #favoriteButton {
-  background-color: #6c8cff;
+  background: linear-gradient(135deg, #a18cd1, #8ec5fc);
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 12px 22px;
+  border-radius: 25px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(120, 110, 200, 0.25);
+  transition: all 0.3s ease;
 }
 
 #favoriteButton:hover {
-  background-color: #4b6fe0;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(120, 110, 200, 0.35);
+  filter: brightness(1.05);
+}
+
+#favoriteButton:active {
+  transform: translateY(0);
 }
